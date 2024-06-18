@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    width:100%;
+    height: 100vh;
+    background-color: red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.outer-circle{
+    width: 230px;
+    height: 230px;
+    border: 10px solid black;
+    background-color: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+.inner-circle{
+    width:210px;
+    height:210px;
+    border-radius:50%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    color:rgb(13, 4, 4);
+    font-size: 23px;
+}
+.minute{
+    font-size: 48px;
+}
+.sec{
+    font-size:42px;
+}
+.msec{
+    font-size:27px;
+}
+.button-wrapper{
+    display:flex;
+    justify-content: space-between;
+   width: 250px;
+   margin-top: 30px;
+
+}
+.button{
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    border:3px solid black;
+    background-color:brown ;
+    cursor:pointer
+}
+.button:hover{
+    background-color:white;
+    color:black;
+
+}
+.laps{
+    list-style:none ;
+    color:white;
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    position:relative;
+    padding:30px 0px;
+    margin-top:30px;
+
+}
+
+.laps ::-webkit-scrollbar{
+    display: none;
+    background-color: burlywood;
+}
+
+.lap-item{
+    
+    margin-top:15px;
+    display: inline-block;
+    padding:10px;
+    background-color:black;
+    width:100%;
+    text-align: center;
+    border:1px solid #444;
+    border-radius: 50px;
+
+
+}
+.number{
+    color:#cccccc;
+}
+.time-stamp{
+    display: inline-box;
+    margin-left:25px;
+}
+
+.lap-clear-button{
+    display:block;
+    position:fixed;
+    z-index:1000;
+    bottom: 35px;
+    left:50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding:10px 0;
+    border-radius:50px;
+    background-color:rgba(255,255,255,0.9);
+    border:2px solid #444444;
+   font: weight 5px;
+}
+.hidden{
+    display: hidden;
+}
